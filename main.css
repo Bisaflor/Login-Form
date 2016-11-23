@@ -1,0 +1,136 @@
+
+
+
+body {
+    background: #fadaea; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FADAEA ,#ffb6c1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,#FADAEA ,#ffb6c1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color:#eee9e9;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 500px;
+    height:auto;
+}
+
+.login-box {
+    position: relative;
+    margin: 50px auto;
+    height:200px;
+    width:300px;
+    background: #f9e9e9;
+    color: grey;
+}
+
+.login-box:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    background: rgba(170,59,78,0.5);
+    border-radius: 4px;
+}
+
+.login-box h1 {
+    margin-top: -2px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background:#f06e7f;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.remember_me label {
+    padding-left: 15px;
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+.login-help {
+    position: relative;
+    top: -30px;
+}
+
+.form {
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.form input[type=text], form input[type=password] {
+    box-shadow: 1px 1px 10px #888888;
+    height:20px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.submit {
+    float:right;
+    border-radius: 10px;
+    height:30px;
+    width: 60px;
+    margin-right: 10px;
+    background: white;
+    color: #8b0000;
+    font-weight: 700;
+    border-color: 1px solid #8b0000;
+}
+
+.submit:hover {
+    background: #f06e7f;
+    color:white;
+    border: 1px solid #8b0000;
+    box-shadow: 3px 0px 3px 0px #aa3b4e;
+}
+
+.login-help {
+    width: 300px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.login-help a:link,
+.login-help a:visited {
+    color: #8b0000;
+    text-decoration: none;
+}
+
+.login-help a:hover,
+.login-help a:active {
+    color: #aa3b4e;
+}
+
+
+input[type=checkbox] {
+    border: 1px solid #c0c0c0;
+    padding: 0;
+    font-size: 12px;
+    width: 1.25em;
+    height: 1.25em;
+    background: #fff;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#fbfbfb));
+    -webkit-appearance: none;
+    -webkit-box-shadow: 1px 1px 1px #fff;
+    -webkit-border-radius: 0.25em;
+    vertical-align:text-top;
+    text-align: center;
+}
+
+input[type=checkbox]:checked::after {
+    content:"x";
+    text-align: center;
+    font-size: 14px;
+    height: 12px;
+    line-height: 12px;
+}
